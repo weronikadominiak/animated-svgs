@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="shortcut icon" href="heart.ico" type="image/x-icon">
+    <title>Animated SVG</title>
+
+    <style>
+        body {
+            height: 100%;
+            font-family: Indie Flower, cursive;
+            background: #87ecf5;
+            display: flex;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 32px;
+            line-height: 40px;
+            cursor: pointer;
+            padding: 8px 16px;
+        }
+
+        h1 {
+            font-family: Nunito, sans-serif;
+            font-size: 40px;
+            line-height: 52px;
+        }
+
+        .container {
+            border: 3px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 100px;
+        }
+
+        .cls-1 {
+            fill: #f784d0;
+        }
+
+        .cls-2 {
+            fill: #e261be;
+        }
+
+        .image {
+            height: 50px;
+            width: 50px;
+            animation: heartbeat 2s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(.75);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(.75);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="image">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.2 45.8">
+                <title>heart</title>
+                <path
+                    d="M67.76,55.55,48.67,74.63,29.59,55.55C15,37.44,34.48,18.31,48.67,36.46,64.45,17.85,83.44,36.84,67.76,55.55Z"
+                    transform="translate(-24.42 -28.83)" />
+                <path class="cls-1"
+                    d="M66.51,55.79,48.67,73.63,30.83,55.79C17.19,38.86,35.4,21,48.67,38,63.42,20.55,81.18,38.3,66.51,55.79Z"
+                    transform="translate(-24.42 -28.83)" />
+                <path class="cls-2"
+                    d="M49.67,36.83C63.88,23.58,79.2,40.42,65.27,57l1.24-1.24C80.85,38.7,64.21,21.36,49.67,36.83Z"
+                    transform="translate(-24.42 -28.83)" />
+                <path class="cls-2"
+                    d="M47.43,39.19c.4-.46.79-.9,1.19-1.31-6.95-8.83-15.23-8.13-19.59-3C33.61,30.93,41.08,31.07,47.43,39.19Z"
+                    transform="translate(-24.42 -28.83)" />
+            </svg>
+        </div>
+        <h1>Animated SVGs</h1>
+        <a href="ducky.html">Ducky</a>
+        <a href="spaceship.html">Spaceship</a>
+    </div>
+
+</body>
+
+</html>
