@@ -7,38 +7,36 @@
     <style>
         #arms,
         #shoulders {
+            transform: translate3d(0, 0, 0);
+            perspective: 1000px;
+            backface-visibility: hidden;
             animation: shrug 3s ease-out;
         }
 
         #head {
+            transform: translate3d(0, 0, 0);
+            perspective: 1000px;
+            backface-visibility: hidden;
             animation: head-down 3s ease-out;
         }
 
         @keyframes shrug {
-            10%{
-                transform: translateY(-10px);
-            }
-
             30%{
-                transform: translateY(-20px);
+                transform: translate3d(-20px, 0, 0);
             }
 
             80%{
-                transform: translateY(5px);
+                transform: translate3d(5px, 0, 0);
             }
         }
 
         @keyframes head-down {
-            10%{
-                transform: translateY(5px);
-            }
-
             30%{
-                transform: translateY(15px);
+                transform: translate3d(15px, 0, 0);
             }
 
             80%{
-                transform: translateY(-5px);
+                transform: translate3d(-5px, 0, 0);
             }
         }
 
